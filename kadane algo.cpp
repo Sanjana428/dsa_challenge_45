@@ -4,13 +4,12 @@ using namespace std;
 class kadane{
 	public:
     int maxSubArray(vector<int>& nums) {
-     int i,sum=0,p_sum=0,a,p;
-     vector<int> s_array;
+     int i,sum=0,p_sum=INT_MIN;
      for(i=0;i<nums.size();i++){
-       sum=nums[i]+sum;
+       sum+=nums[i];
        if(sum<0)
        sum=0;
-       else if(p_sum<sum){
+       if(p_sum<sum){
        p_sum=sum;
     }}
 	return p_sum;
