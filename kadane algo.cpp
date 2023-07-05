@@ -4,7 +4,7 @@ using namespace std;
 class kadane{
 	public:
     int maxSubArray(vector<int>& nums) {
-     int i,sum=0,p_sum=INT_MIN;
+     int i,sum=0,p_sum=nums[i;
      for(i=0;i<nums.size();i++){
        sum+=nums[i];
        if(sum<0)
